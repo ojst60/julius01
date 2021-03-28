@@ -1,27 +1,13 @@
-import Login from './Login';
-import Signup from './Signup';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { withAuthenticator,AmplifyAuthenticator,AmplifySignOut , AmplifySignIn } from '@aws-amplify/ui-react';
+import { Auth, Hub } from 'aws-amplify';
+import Profile from './Profile';
 
-function App() {
 
-  return (
-    <Router>
-    <div className="App">
-    
-    <div className="mainContent">
-      <Switch>
-        <Route exact path="/">
-          <Login />
-        </Route>
-        <Route exact path="/Signup">
-          <Signup />
+const App = () => (
+ <Profile />
+);
 
-        </Route>
-      </Switch>
-    </div>
-    </div>
-    </Router>
-  );
-}
 
-export default App;
+
+export default withAuthenticator(App);
