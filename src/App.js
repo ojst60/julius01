@@ -1,4 +1,4 @@
-import { WithAuthenticator,} from '@aws-amplify/ui-react';
+import { withAuthenticator,} from '@aws-amplify/ui-react';
 import Profile from './Profile';
 
 
@@ -9,4 +9,4 @@ const App = () => (
 
 
 
-export default WithAuthenticator(App);
+export default withAuthenticator(App);
