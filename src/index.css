@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+body {
+  background-image: linear-gradient(to bottom right, red, yellow);
+
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Amatic SC", cursive;
+}
+
+.login {
+  margin: 18%;
+  text-align: center;
+}
+
+.loginSection {
+  padding: 5%;
+  width: 100%;
+}
+
+.loginSection h3 {
+  padding: 5%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 60%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
