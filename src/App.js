@@ -1,12 +1,12 @@
-import { AmplifyAuthenticator,} from '@aws-amplify/ui-react';
+import { WithAuthenticator,} from '@aws-amplify/ui-react';
 import Profile from './Profile';
 
 
 const App = () => (
-  <AmplifyAuthenticator><Profile /></AmplifyAuthenticator>
+  <Profile />
  
 );
 
 
 
-export default App;
+export default WithAuthenticator(App);
